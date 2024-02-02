@@ -1,0 +1,47 @@
+img{
+    background-color: blue;
+    height:80px;
+    width:60px;
+    margin-left:10px;
+    border-radius: 8px;   
+}
+img:hover{
+    height:100px;
+    width:80px;
+    box-shadow: 5px 5px 30px rgb(5, 237, 233);
+    border-radius: 12px;
+
+}
+body{
+    background-image: url("./assets/wallpaper.jpg");
+    margin:0.4rem;
+    background-color: aqua;
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.container{
+    height:110px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+@media (max-width:500px) {
+    body{
+        /* transition:background-image 0.5s ease-in-out; */
+        overflow: hidden;
+        background-color: rgb(14, 232, 83);
+        height:100vh;
+        width:100%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+}
